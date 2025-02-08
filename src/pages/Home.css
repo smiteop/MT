@@ -1,0 +1,130 @@
+.country-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .region-header {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .region-header button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .region-header button:hover {
+    background-color: #0056b3;
+  }
+  .slider {
+    width: 807px;
+    height: 498px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border: solid;
+    flex-direction: column;
+  }
+  
+  .slider-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  .slider-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .slider-content img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 20px;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    width: 528px;
+    height: 130px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card-flag {
+    width: 50px;
+    height: 30px;
+    object-fit: cover;
+  }
+  .initial-row{
+    display: flex;
+    gap: 10px;
+  }
+  .load-more {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .next-flag {
+    text-align: center;
+    width: 232px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 498px;
+    border: solid;
+  }
+    .next-flag img {
+        width: 150px;
+        height: 100px;
+        object-fit: cover;
+      }
+   
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+  }
+  
+  .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #717171;
+  }
+  
+  .dot:hover {
+    background-color: #ddd;
+  }
+  .slider-navigation{
+    display: flex;
+  }

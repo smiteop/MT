@@ -128,3 +128,89 @@
   .slider-navigation{
     display: flex;
   }
+/* Mobile View */
+@media (max-width: 768px) {
+    .cards {
+      display: flex;
+      flex-direction: column; /* Ensure only 1 column of cards */
+      align-items: center;
+      justify-content: center;
+    }
+    .slider {
+        width: 317px;
+        height: 195px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        border: solid;
+        flex-direction: column;
+      }
+    .card {
+      width: 90%; /* Make cards take up 90% of the screen width */
+      display: flex;
+      align-items: center; /* Align image and text horizontally */
+      margin-bottom: 10px;
+      grid-template-columns: repeat(1, 1fr)
+    }
+  
+    .card-flag {
+      width: 60px;  /* Adjust image size */
+      height: 60px; /* Adjust image size */
+      margin-right: 10px;
+    }
+  
+    .card h3 {
+      font-size: 18px;
+    }
+  
+    .card p {
+      font-size: 14px;
+    }
+  
+    .initial-row {
+      flex-direction: column-reverse; /* Next flag on top, slider below */
+      align-items: center;
+    }
+    .next-flag {
+        text-align: center;
+        width: 317px;
+        height: 147px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 498px;
+        border: solid;
+      }
+  }
+  
+  /* Desktop View */
+  @media (min-width: 769px) {
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for desktop */
+      gap: 20px; /* Add gap between cards */
+    }
+  
+    .card {
+      display: flex;
+      align-items: center; /* Align image and text horizontally */
+      margin-bottom: 0;
+    }
+  
+    .card-flag {
+      width: 60px;  /* Adjust image size */
+      height: 60px; /* Adjust image size */
+      margin-right: 10px;
+    }
+  
+    .card h3 {
+      font-size: 20px;
+    }
+  
+    .card p {
+      font-size: 16px;
+    }
+  }
+  
+  

@@ -162,7 +162,7 @@ const Login = () => {
             )}
           </Formik>
         </Col>
-        <Col>
+        <Col className="desktop-only">
           <img src={icons} style={{ width: "300px", height: "499px" }} />
         </Col>
       </Row>

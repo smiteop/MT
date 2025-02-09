@@ -129,8 +129,10 @@ const Home = () => {
                 alt={country.name}
                 className="card-flag"
               />
+              <div style={{display:"flex",flexDirection:"column"}}>
               <h3>{country.name}</h3>
-              <p>Region: {country.region}</p>
+              <p> {country.region}</p>
+              </div>
             </div>
           ))}
         </div>
